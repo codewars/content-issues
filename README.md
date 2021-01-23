@@ -25,9 +25,9 @@ limited capabilities of fixing kata, but have large set of functions
   - Flag solutions as cheats, 
   - Revalidate solutions which do not pass tests anymore but did not get
 invalidated automatically, 
-  - Hide solutions which are valid, but should not be visible for some
- reason, for example solutions of a 7 kyu kata which are spoilers and can
-be used to solve a challenge version kata of the same problem. 
+  - Hide solutions which are valid, but can be cosidered spoilers and should not be visible.
+  For example solutions of a 7 kyu kata which can
+be used to solve a challenge version kata on the same problem. 
 - Issues which can be handled by other users. Such issues can usually be reported
 with an appropriately labeled post in kata discussion, but they are difficult
 to track and search for, so after the issue gets reported there, it can be
