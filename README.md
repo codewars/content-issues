@@ -1,3 +1,9 @@
+**NOTE:** Please mind that this repository is not yet finally set up. It's still work in progress. Thank you for your patience while we are setting it up, and describing the workflow.
+
+When things are finally set up, this repository will be announced on [Codewars blog](https://blog.codewars.com/) and [documented](https://docs.codewars.com/).
+
+
+
 # Issue tracker for Codewars content
 
 This repository is used to track issues related to Codewars content:
