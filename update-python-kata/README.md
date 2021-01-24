@@ -36,6 +36,8 @@ There's a [reference of the new Python testing framework](https://docs.codewars.
 
 It would be great if some other, existing issues were also addressed, in the one go.
 
+If you write a post in kata discussion to get attention of its author or to signal the neccessity of update, consider using `suggestion` label instead of `issue`. After the kata is updated, it would be nice to thank the author or mainainer for handling it.
+
 ## I cannot update my kata, but I want to. What should I do?
 
 You can just leave it, and someone will eventually handle it. You can also create an issue on [content issues board](https://github.com/codewars/content-issues/issues) so it would be hopefully processed sooner.
