@@ -6,21 +6,21 @@ The problem described here is caused by the fact that test suites of old kata do
 
 ## Why eveything was OK until now, and now the problem suddenly popped up?
 
-Because future compatibility and maintenance. Python is one of the oldest supported languages on Codewars and it drags behind a large bag of compatibility hacks and workarounds. Tests output is handled in the runner by mechanism which is not related to any programming language, and workarounds needed to make Python tests to work affect the maintainability of the runner overall. Tests output for majority of languages is well defined and structured, except a few which require a large set of workarounds.
+Because future compatibility and maintenance. Python is one of the oldest supported languages on Codewars and it drags behind a large bag of compatibility hacks and workarounds. Tests output is handled in the runner by mechanism which is not related to any programming language, and workarounds needed to make Python tests to work affect the maintainability of the runner overall. Tests output for majority of languages is well defined and structured, except a few which require a large set of workarounds, including Python.
 
-Fixing tests will allow for cleaning up the code if the runner and will make it easier to devlop it, provide new features, and introduce new languages and language versions in the future.
+Fixing tests will allow for cleaning up the code of the runner and will make it easier to devlop it, provide new features, and introduce new languages and language versions in the future.
 
-## Do my kata have to be updated?
+## My kata work, do they have to be updated?
 
 They should. Until they are, "old" format of tests output has to be supported, impeding updates to Python versions or test frameworks.
 
-## Do I have to update my kata?
+## Do I have to update my kata by myself?
 
-No. It would be nice if Python authors and translators took responsibility of fixing kata and translations they created, but they are not forced to. However, autors should allow kata to get fixed by someone else. There's a group of users willing to fix affected kata, and they use available means to track them and update them. If you do not want to update kata on your own, let them do their work. Do not mark their issues as resolved and do not obstruct their work.
+No. It would be nice if Python authors and translators took responsibility of fixing kata and translations they created, but they are not forced to. However, autors should allow kata to get fixed by someone else. There's a group of users willing to fix affected kata, and they use available means to track them and update them. If you do not want to update kata on your own, let them do their work. Do not mark their issues as resolved if they are not, and do not obstruct their work.
 
 ## Will my kata stop working if they are not updated?
 
-No. Codewars staff explicitly takes care to not leave kata broken when updating the code runner. If your kata would not work, it will simply prevent the update. Codewars will get stuck with old Python version forever.
+No. Codewars staff explicitly takes care to not leave kata broken when updating the code runner. If your kata would not work without being fixed, it will simply prevent the update or increase the efforts needed to roll one out.
 
 ## How can I update old kata?
 
