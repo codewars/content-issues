@@ -16,8 +16,16 @@ They should. Until they are, "old" format of tests output has to be supported, i
 
 ## Do I have to update my kata?
 
-No. It would be nice if Python authors and translators took responsibility of fixing kata and translations they created, but they are not forced to.
+No. It would be nice if Python authors and translators took responsibility of fixing kata and translations they created, but they are not forced to. However, autors should allow kata to get fixed by someone else. There's a group of users willing to fix affected kata, and they use available means to track them and update them. If you do not want to update kata on your own, let them do their work. Do not mark their issues as resolved and do not obstruct their work.
 
 ## Will my kata stop working if they are not updated?
 
+No. Codewars staff explicitly takes care to not leave kata broken when updating the code runner. If your kata would not work, it will simply prevent the update. Codewars will get stuck with old Python version forever.
+
 ## How can I update old kata?
+
+There's a [reference of the new Python testing framework](https://docs.codewars.com/languages/python/codewars-test/#python-codewars-test-framework) and [tutorial on creating Python kata](https://docs.codewars.com/languages/python/authoring/#testing-framework) which contains some explanations and examples. We hope these will be helpful.
+
+## I cannot update my kata, but I want to. What should I do?
+
+You can just leave it, and someone will evntually handle it. You can also create an issue on [content issues board](https://github.com/codewars/content-issues/issues) so it would be hopefully processed sooner.
