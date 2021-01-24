@@ -6,13 +6,13 @@ The problem described here is caused by the fact that test suites of old kata do
 
 ## Why was everything OK until now, and now the problem suddenly popped up?
 
-Because of future compatibility and maintenance. Python is one of the oldest supported languages on Codewars and it drags behind a large bag of compatibility hacks and workarounds. Tests output is handled in the runner by a mechanism that is not related to any programming language, and workarounds needed to make Python tests work affect the maintainability of the runner overall. Test output for the majority of languages is well defined and structured, except a few which require a large set of workarounds, including Python.
+Because of future compatibility and maintenance. Python is one of the oldest supported languages on Codewars and it drags behind a large bag of compatibility hacks and workarounds. The test output is handled in the runner by a mechanism that is not related to any programming language, and workarounds needed to make Python tests work affect the maintainability of the runner overall. Test output for the majority of languages is well defined and structured, except a few which require a large set of workarounds, including Python.
 
-Fixing tests will allow for cleaning up the code of the runner and will make it easier to devlop it, provide new features, and introduce new languages and language versions in the future.
+Fixing tests will allow for cleaning up the code of the runner and will make it easier to develop it, provide new features, and introduce new languages and language versions in the future.
 
 ## My kata work, do they have to be updated?
 
-They should. Until they are, the "old" format of tests output has to be supported, impeding updates to Python versions or test frameworks.
+They should. Until they are, the "old" format of the test output has to be supported, impeding updates to Python versions or test frameworks.
 
 ## Do I have to update my kata by myself?
 
