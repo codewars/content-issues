@@ -2,17 +2,17 @@
 
 ## What is the problem with old Python kata?
 
-The problem described here is caused by the fact that test suites of old kata do not conform to the form expected by Codewars code runner and produce test output in a format not conforming to the expected one. The main reason for that is that calls to assertions (`assert_equals`, `expect`, etc.) are not placed inside of an `@it` block, but in a scope of a `@describe` block or just in the top-level scope of tests.
+The problem described here is caused by the fact that test suites of old kata do not conform to the form expected by Codewars' code runner and produce test output in a format not conforming to the expected one. The main reason is that calls to assertions (`assert_equals`, `expect`, etc.) are not placed inside of an `@it` block, but in a scope of a `@describe` block or just in the top-level scope of tests.
 
-Additionally, missing imports for test framework and solution modules make some additional preprocessing necessary and potentially mess up line numbers in error messages.
+Additionally, missing imports for the test framework and solution modules require additional preprocessing which potentially messes up line numbers in error messages.
 
-## Why was everything OK until now, and now the problem suddenly popped up?
+## Why did everything seem okay until now?
 
-Because of future compatibility and maintenance. Python is one of the oldest supported languages on Codewars and it drags behind a large bag of compatibility hacks and workarounds. The test output is handled in the runner by a mechanism that is not related to any programming language, and workarounds needed to make Python tests work affect the maintainability of the runner overall. Test output for the majority of languages is well defined and structured, except a few which require a large set of workarounds, including Python.
+Because of future compatibility and maintenance. Python is one of the oldest supported languages on Codewars and it drags behind a large bag of compatibility hacks and workarounds. The test output is handled in the runner by a mechanism that is not related to any programming language, and workarounds needed to make Python tests work affect the maintainability of the runner overall. The test output format for the majority of languages is well defined and structured, except for a few which require a large set of workarounds, including Python.
 
 Fixing tests will allow for cleaning up the code of the runner and will make it easier to develop it, provide new features, and introduce new languages and language versions in the future.
 
-Additionally, from the user perspective, improperly structured tests tend to result in poor output and are prone to buggy display in test output panel. Updating the kata can potentially fix erlated problems.
+Additionally, from the user's perspective, improperly structured tests tend to result in poor output and are prone to buggy display in the test output panel. Updating the kata can potentially fix related problems.
 
 ## My kata work, do they have to be updated?
 
@@ -24,20 +24,20 @@ No. It would be nice if Python authors and translators took the responsibility f
 
 ## Will my kata stop working if they are not updated?
 
-No. The Codewars staff explicitly take care to not leave kata broken when updating the code runner. When any change is going to be introduced, it will be done in a backwrds compatible way. However, if your kata would not work without being fixed, it will simply postpone the update or increase the efforts needed to roll one out.
+No. The Codewars staff explicitly take care to not leave kata broken when updating the code runner. When any change is going to be introduced, it will be done in a backwards compatible manner. However, if your kata would not work without being fixed, it will simply postpone the update or increase the efforts needed to roll one out.
 
 ## How do I update old kata?
 
 Basically you need to do two things:
  - make sure that all assertions are called inside of a function decorated with `@it`,
- - add missing imports for `solution`, `codewars_test`, and `preloaded` modules if necessary, to the full tet suite and sample tests (and `preloaded` to example solution, if necessary).
+- add missing imports for `solution`, `codewars_test`, and `preloaded` modules if necessary, to the full test suite and sample tests (and `preloaded` to the example solution, if necessary).
 
 There's a [reference of the new Python testing framework](https://docs.codewars.com/languages/python/codewars-test/#python-codewars-test-framework) and [tutorial on creating Python kata](https://docs.codewars.com/languages/python/authoring/#testing-framework) which contains some explanations and examples. We hope these will be helpful.
 
-It would be great if some other, existing issues were also addressed, in the one go.
+It would be great if some other existing issues were also addressed in one go.
 
-If you write a post in kata discussion to get attention of its author or to signal the neccessity of update, consider using `suggestion` label instead of `issue`. After the kata is updated, it would be nice to thank the author or mainainer for handling it.
+If you write a post in the kata discourse to get the author's attention or to signal the necessity of the update, consider labelling it as a "Suggestion" instead of an "Issue". After the kata is updated, it would be nice to thank the author or maintainer for handling it.
 
 ## I cannot update my kata, but I want to. What should I do?
 
-You can just leave it, and someone will eventually handle it. You can also create an issue on [content issues board](https://github.com/codewars/content-issues/issues) so it would be hopefully processed sooner.
+You can just leave it, and someone will eventually handle it. You can also create an issue on the [content issues board](https://github.com/codewars/content-issues/issues) so it would hopefully be processed sooner.
